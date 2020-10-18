@@ -5,7 +5,14 @@ class SnippetSerializer(serializers.ModelSerializer):
     class Meta:
         model = Snippet
         fields = ['id', 'title', 'code', 'linenos', 'language', 'style']
-        
+
+'''
+En la primera parte del tutorial desarrolla el Serializer, para luego
+cambiarlo por ModelSerializer.
+
+Por esa razón, el código siguiente esta comentado.
+'''
+
 # class SnippetSerializer(serializers.Serializer):
 #     id = serializers.IntegerField(read_only=True)
 #     title = serializers.CharField(required=False, allow_blank=True, max_length=100)
